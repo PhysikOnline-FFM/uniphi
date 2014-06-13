@@ -1,0 +1,87 @@
+/**!
+ * (das hier ist noch aus dem uniphi.meteor-Prototypen)
+ *
+ *
+ * UniPhi.meteor-Design als Stylus-Files
+ * http://learnboost.github.io/stylus/ - wie LESS CSS nur noch besser :)
+ *
+ * Wir verwenden Bootstrap, allerdings nicht das von meteor mitgelieferte, weil meteor
+ * Bootstrap v2.3 (!) eingebaut hat. 
+ *
+ * Sven, 31.05.2014
+ **/
+
+// Meteor magic - import http://visionmedia.github.io/nib/
+@import 'nib'
+
+// Open Sans for Text, Enriqueta for heading
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:700,400italic,400|Enriqueta:400,700")
+
+// Some color scheme
+// http://www.colourlovers.com/business/trends/branding/7874/ROBAROV_WEBDESIGN
+lgreen = #D0DD2B
+dgreen = #98C73D
+lblue = #67CDDC
+dblue = #00A9E0
+lblack = #3B3B3D
+
+leftcol_bg = lgreen
+bodybg = #F7F7F7
+
+reset()
+	margin: 0
+	padding: 0
+
+body
+	reset()
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 13px
+	font-weight: 400;
+	background-color: bodybg
+
+.first-row
+	background-color: leftcol_bg
+.right-col, .footer
+	 background-color: bodybg
+	
+h1, h2, h3
+	reset()
+	font-family: Enriqueta
+	font-weight: 400
+
+header
+	background-color: lgreen
+	color: lblack
+
+header, main
+	padding: 1em
+
+section
+	background: #fff
+	border-radius: 5px
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4)
+	padding: 1.5em
+
+	/*
+div.records
+	clearfix()
+	section 
+		width: 15em;
+		float: left;
+		margin: 1em;
+*/
+
+div.records
+	padding: 20px 10px;
+	
+	section
+		width: 50%
+		margin-bottom: 15px;
+	
+	
+section.record.new,
+section.search
+	input
+		display: block
+		width: 100%
+		border: none
