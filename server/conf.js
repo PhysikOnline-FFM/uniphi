@@ -8,5 +8,10 @@
  * Licensed as GPL v3
  **/
 
-var db_credentials = 'mongodb://localhost/test';
+var configuration = {
+    test: "Hallo",
+    db_credentials: 'mongodb://localhost:27017/test',
+}
 
+
+module.exports = configuration;
